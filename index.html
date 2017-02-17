@@ -2,10 +2,11 @@
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="main.js"></script>
   <script src='https://api.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.js'></script>
 	<link href='https://api.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
+  <src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="main.js"></script>
   <title>Boulevard Bites</title>
 </head>
 <body>
@@ -36,9 +37,14 @@
   </div>
   <!-- MAPBOX :) -->
   <div id='map' style='width: 400px; height: 300px;'></div>
- 	<script src="main.js"></script>
+ 	  <script src="main.js"></script>
   <div id="articles">
     <!--Articles - Nathan, Sharon-->
     Articles
+    <ul class="nav nav-tabs">
+      <li><a href="#aaa" data-toggle="tab">AAA</a></li>
+      <li><a href="#bbb" data-toggle="tab">BBB</a></li>
+      <li><a href="#ccc" data-toggle="tab">CCC</a></li>
+  </ul>
   </div>
 </body>

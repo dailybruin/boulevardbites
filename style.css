@@ -1,4 +1,16 @@
-
+.brand-logo{
+  font-family: "Pacifico", cursive;
+}
+#nav-mobile{
+  font-family: "Lato";
+}
+#nav-mobile a:link,
+#nav-mobile a:visited,
+#nav-mobile a:hover,
+#nav-mobile a:active {
+  color: white;
+  text-decoration: none;
+}
 #map {
 	width: 100%;
 	height: 400px;

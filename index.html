@@ -10,7 +10,8 @@
   <title>Boulevard Bites</title>
 </head>
 <body>
-  <div>
+
+<div>
     <!--Navbar - Benson-->
     <nav class="navbar navbar-default">
       <div class="container-fluid">
@@ -36,15 +37,30 @@
     </nav>
   </div>
   <!-- MAPBOX :) -->
-  <div id='map' style='width: 400px; height: 300px;'></div>
- 	  <script src="main.js"></script>
+  <div id='map'></div>
+ 	<script src="main.js"></script>
   <div id="articles">
     <!--Articles - Nathan, Sharon-->
-    Articles
-    <ul class="nav nav-tabs">
-      <li><a href="#aaa" data-toggle="tab">AAA</a></li>
-      <li><a href="#bbb" data-toggle="tab">BBB</a></li>
-      <li><a href="#ccc" data-toggle="tab">CCC</a></li>
-  </ul>
+		<div>
+
+		  <!-- Nav tabs -->
+  			<ul class="nav nav-tabs" role="tablist">
+   			 <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+   			 <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+   			 <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+   			 <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+
+			  </ul>
+
+ 			 <!-- Tab panes -->
+  			<div id = "myTabs" class="tab-content">
+  			 <div role="tabpanel" class="tab-pane active" id="home">...</div>
+  			 <div role="tabpanel" class="tab-pane" id="profile">...</div>
+   			 <div role="tabpanel" class="tab-pane" id="messages">...</div>
+  			  <div role="tabpanel" class="tab-pane" id="settings">...</div>
+
+ 			 </div>
+		</div>
   </div>
+
 </body>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src='https://api.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.js'></script>
 	<link href='https://api.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
-  <src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
   <script src="https://use.fontawesome.com/d29dec308b.js"></script>
@@ -37,19 +37,19 @@
 <div id="articles">
   <!-- Article tabs -->
   <div>
-    <ul class="nav nav-tabs">
-      <li role="presentation"><a href="#">Ramayani</a></li>
-      <li role="presentation"><a href="#">Taste of Tehran</a></li>
-      <li role="presentation"><a href="#">Hamasaku</a></li>
-      <li role="presentation"><a href="#">Hamasaku</a></li>
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#firstItem" data-toggle="tab">Ramayani</a></li>
+      <li role="presentation"><a href="#secondItem" data-toggle="tab">Taste of Tehran</a></li>
+      <li role="presentation"><a href="#thirdItem" data-toggle="tab">Hamasaku</a></li>
+      <li role="presentation"><a href="#fourthItem" data-toggle="tab">OP Cafe</a></li>
     </ul>
   </div>
   <!-- Tab panes -->
-  <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="home">...</div>
-    <div role="tabpanel" class="tab-pane" id="profile">...</div>
-    <div role="tabpanel" class="tab-pane" id="messages">...</div>
-    <div role="tabpanel" class="tab-pane" id="settings">...</div>
+  <div id = "myTabs" class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="firstItem">Ramayani</div>
+    <div role="tabpanel" class="tab-pane" id="secondItem">Taste of Tehran</div>
+    <div role="tabpanel" class="tab-pane" id="thirdItem">Hamasaku</div>
+    <div role="tabpanel" class="tab-pane" id="fourthItem">OP Cafe</div>
   </div>
 </div>
 

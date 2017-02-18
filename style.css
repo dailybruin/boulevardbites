@@ -30,3 +30,9 @@
 .row {
   padding-top: 1%;
 }
+.card-title {
+  font-family: "Pacifico", cursive;
+}
+.card p {
+  font-family: "Lato";
+}

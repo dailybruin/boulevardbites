@@ -7,20 +7,6 @@ var map = new mapboxgl.Map({
     style: 'mapbox://styles/mapbox/streets-v9'
 });
 
-function activaTab(tab){
-    $('.nav-tabs a[href="#' + tab + '"]').tab('show');
-};
-
-$('#myTabs a').click(function (e) {
-  e.preventDefault()
-  $(this).tab('show')
-})
-
-$('#myTabs a[href="#profile"]').tab('show') // Select tab by name
-$('#myTabs a:first').tab('show') // Select first tab
-$('#myTabs a:last').tab('show') // Select last tab
-$('#myTabs li:eq(2) a').tab('show') // Select third tab (0-indexed)
-
 //smooth scrolling
 $('a[href*="#"]:not([href="#"])').click(function() {
   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -33,4 +19,12 @@ $('a[href*="#"]:not([href="#"])').click(function() {
       return false;
     }
   }
-})
+});
+
+$('.menu li a').click(function(e) {
+  var $this = $(this);
+  if (!$this.hasClass('active')) {
+    $this.addClass('active');
+  }
+  e.preventDefault();
+});

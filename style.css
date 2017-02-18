@@ -1,7 +1,7 @@
-.brand-logo{
+.brand-logo {
   font-family: "Pacifico", cursive;
 }
-#nav-mobile{
+#nav-mobile {
   font-family: "Lato";
 }
 #nav-mobile a:link,
@@ -14,4 +14,12 @@
 #map {
 	width: 100%;
 	height: 400px;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: #ffab91;
+}
+.row {
+  padding-top: 1%;
 }

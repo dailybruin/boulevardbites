@@ -7,7 +7,7 @@ var map = new mapboxgl.Map({
   // initial position in [long, lat] format
   center: [-118.43791, 34.05048],				
   // initial zoom
-  zoom: 20
+  zoom: 11
 });
 
 var stores =       {

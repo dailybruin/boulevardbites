@@ -1,11 +1,88 @@
+
+.restaurant {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  max-width: 190px;
+  width: 100%;
+  color: #bbb;
+  font-size: 16px;
+  box-shadow: none !important;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.restaurant *,
+.restaurant:before,
+.restaurant:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+
+ .restaurant img {
+  max-width: 150%;
+  max-height: 150%;
+  backface-visibility: hidden;
+  vertical-align: text-top;
+
+}
+
+.restaurant figcaption {
+  position: absolute;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 150%;
+  height: 100%;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  font-size: 14px;
+  font-family:"arimo";
+}
+
+#title {
+  padding-left: 100px;
+  bottom: 0px;
+  font-family: "Pacifico", cursive;
+  font-size:20px;
+
+}
+
+.restaurant a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.restaurant:hover figcaption,
+.restaurant.hover figcaption {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+
+
+
 .brand-logo
 {
   font-family: "Pacifico", cursive;
+
 }
 
 #nav-mobile
 {
-  font-family: "Lato";
+  font-family: "arimo";
 }
 
 #nav-mobile a:link,
@@ -15,25 +92,23 @@
 {
   color: white;
   text-decoration: none;
+
 }
 
 #map
 {
-	width: 100%;
-	height: 400px;
+  width: 100%;
+  height: 400px;
+
 }
 
 .container 
 {
   height: 100%;
   width: 100%;
-  background-color: #ffab91;
+  background-color: white ;
 }
 
-.row 
-{
-  padding-top: 1%;
-}
 .card-title 
 {
   font-family: "Pacifico", cursive;
@@ -41,117 +116,9 @@
 
 .card p 
 {
-  font-family: "Lato";
+  font-family: "arimo";
+  height: 100px;
 }
 
-#cardButton
-{
-  color: white;
-}
 
-a.bttn-dark 
-{
-  color: #2f343b;
-  text-decoration: none;
-  -webkit-transition: 0.3s all ease;
-  transition: 0.3s ease all; 
-}
 
-a.bttn-dark:hover 
-{
-  color: #eee; 
-}
-
-a.bttn-dark:focus 
-{
-  color: #eee; 
-}
-
-.bttn 
-{
-  font-size: 12px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  display: inline-block;
-  text-align: center;
-  width: 125px;
-  font-weight: bold;
-  padding: 14px 0px;
-  border: 3px solid #FF0072;
-  border-radius: 2px;
-  position: relative;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1); 
-}
-
-.bttn:before 
-{
-    -webkit-transition: 0.5s all ease;
-    transition: 0.5s all ease;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    right: 50%;
-    bottom: 0;
-    opacity: 0;
-    content: '';
-    background-color: #FF0072;
-    z-index: -2; 
-}
-
-.bttn:hover:before 
-{
-    -webkit-transition: 0.5s all ease;
-    transition: 0.5s all ease;
-    left: 0;
-    right: 0;
-    opacity: 1; 
-}
-
-.bttn:focus:before 
-{
-    transition: 0.5s all ease;
-    left: 0;
-    right: 0;
-    opacity: 1; 
-}
-
-.bttn-dark 
-{
-  font-size: 12px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  display: inline-block;
-  text-align: center;
-  width: 125px;
-  font-weight: bold;
-  padding: 10px 0px;
-  border: 3px solid #2f343b;
-  border-radius: 2px;
-  position: relative;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
-  z-index: 2; 
-}
-
-.bttn-dark:before 
-{
-  -webkit-transition: 0.7s all ease;
-  transition: 0.7s all ease;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  right: 50%;
-  bottom: 0;
-  opacity: 0;
-  content: '';
-  background-color: #2f343b;
-  z-index: -1; 
-}
-
-.bttn-dark:hover:before 
-{
-    -webkit-transition: 0.7s all ease;
-    transition: 0.5s all ease;
-    left: 0;
-    right: 0;
-    opacity: 1; 
-}

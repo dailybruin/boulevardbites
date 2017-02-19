@@ -12,7 +12,7 @@ map.on('style.load', function (e) {
     map.addSource('markers', {
         "type": "geojson",
         "data": {
-            "type": "FeatureCollection",
+            "type": "Feature",
             "features": [{
                 "type": "Feature",
                 "geometry": {
@@ -31,6 +31,34 @@ map.on('style.load', function (e) {
                 },
                 "properties": {
                     "title": "Taste of Tehran",
+                    "marker-color": "#ff00ff",
+                    "marker-symbol": "secondary_marker"
+                }
+            }, 
+                 {
+            "type": "Feature",
+            "features": [{
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [34.048281, -118.443297]
+                },
+                "properties": {
+                    "title": "Hamasaku",
+                    "marker-color": "#ff00ff",
+                    "marker-symbol": "secondary_marker"
+                }
+                }, 
+                 {
+            "type": "Feature",
+            "features": [{
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [34.021047, -118.452468]
+                },
+                "properties": {
+                    "title": "The OP Cafe",
                     "marker-color": "#ff00ff",
                     "marker-symbol": "secondary_marker"
                 }

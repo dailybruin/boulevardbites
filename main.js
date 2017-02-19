@@ -5,7 +5,7 @@ var map = new mapboxgl.Map({
   // style URL
   style: 'mapbox://styles/mapbox/light-v9',
   // initial position in [long, lat] format
-  center: [-118.43791, 34.05048],				// NOTE: Change this to [-118.43791, 34.05048] once we add in our locs
+  center: [-118.43791, 34.05048],				
   // initial zoom
   zoom: 14
 });

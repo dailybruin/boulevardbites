@@ -6,8 +6,8 @@
 .restaurant {
   position: relative;
   display: inline-block;
-  margin: 20px;
   max-width: 190px;
+  margin: 20px;
   width: 100%;
   color: #bbb;
   font-size: 16px;
@@ -27,8 +27,7 @@
 
 
  .restaurant img {
-  max-width: 150%;
-  max-height: 200%;
+  max-width: 140%;
   height: 200px;
   overflow: hidden;
   backface-visibility: hidden;
@@ -41,7 +40,7 @@
   padding-top: 15px;
   padding-left: 10px;
   padding-right: 10px;
-  width: 150%;
+  width: 140%;
   height: 100%;
   top: 0px;
   bottom: 0px;
@@ -49,13 +48,14 @@
   right: 0px;
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.9);
-  font-size: 14px;
-  font-family:"arimo";
+  font-size: 12px;
+  font-family:"georgia";
 }
 
 #title {
   padding-left: 100px;
   bottom: 0px;
+  padding-top: 20px;
   font-family: "Pacifico", cursive;
   font-size:20px;
 
@@ -88,7 +88,8 @@
 
 #nav-mobile
 {
-  font-family: "arimo";
+  font-family: "futura";
+  font-variant: small-caps;
 }
 
 #nav-mobile a:link,
@@ -98,6 +99,8 @@
 {
   color: white;
   text-decoration: none;
+  font-family: "futura";
+  font-variant: small-caps;
 
 }
 
@@ -105,7 +108,8 @@
 {
   width: 100%;
   height: 400px;
-  font-family: "arimo"
+  font-family: "futura";
+  font-variant: caps;
 
 }
 
@@ -123,7 +127,8 @@
 
 .card p 
 {
-  font-family: "arimo";
+  font-family: "futura";
+  font-variant: small-caps;
   height: 100px;
 }
 

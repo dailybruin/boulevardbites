@@ -28,7 +28,9 @@
 
  .restaurant img {
   max-width: 150%;
-  max-height: 150%;
+  max-height: 200%;
+  height: 200px;
+  overflow: hidden;
   backface-visibility: hidden;
   vertical-align: text-top;
 

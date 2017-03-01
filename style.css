@@ -1,11 +1,95 @@
+
+.row {
+  padding-top: 1%;
+}
+
+.restaurant {
+  position: relative;
+  display: inline-block;
+  max-width: 190px;
+  margin: 20px;
+  width: 100%;
+  color: #bbb;
+  font-size: 16px;
+  box-shadow: none !important;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.restaurant *,
+.restaurant:before,
+.restaurant:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+
+ .restaurant img {
+  max-width: 140%;
+  height: 200px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  vertical-align: text-top;
+
+}
+
+.restaurant figcaption {
+  position: absolute;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 140%;
+  height: 100%;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  font-size: 12px;
+  font-family:"georgia";
+}
+
+#title {
+  padding-left: 100px;
+  bottom: 0px;
+  padding-top: 20px;
+  font-family: "Pacifico", cursive;
+  font-size:20px;
+
+}
+
+.restaurant a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.restaurant:hover figcaption,
+.restaurant.hover figcaption {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+
+
+
 .brand-logo
 {
   font-family: "Pacifico", cursive;
+
 }
 
 #nav-mobile
 {
-  font-family: "Lato";
+  font-family: "futura";
+  font-variant: small-caps;
 }
 
 #nav-mobile a:link,
@@ -15,24 +99,39 @@
 {
   color: white;
   text-decoration: none;
+  font-family: "futura";
+  font-variant: small-caps;
+
 }
 
 #map
 {
-	width: 100%;
-	height: 400px;
+  width: 100%;
+  height: 400px;
+  font-family: "futura";
+  font-variant: caps;
+
 }
-.container {
+
+.container 
+{
   height: 100%;
   width: 100%;
-  background-color: #ffab91;
+  background-color: white ;
 }
-.row {
-  padding-top: 1%;
-}
-.card-title {
+
+.card-title 
+{
   font-family: "Pacifico", cursive;
 }
-.card p {
-  font-family: "Lato";
+
+.card p 
+{
+  font-family: "futura";
+  font-variant: small-caps;
+  height: 100px;
 }
+
+
+
+

@@ -4,7 +4,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src='https://api.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.js'></script>
-	<link href='https://api.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
   <script src="https://use.fontawesome.com/d29dec308b.js"></script>
@@ -18,105 +18,55 @@
 <!--Navbar - Benson-->
 <div>
     <nav>
-      <div class="nav-wrapper deep-orange darken-1">
+      <div class="nav-wrapper black nav-wrapper-fixed-top" id= "navbar">
         <a href="#" class="brand-logo center">Boulevard Bites</a>
         <ul id="nav-mobile" class="left hide-on-sm-and-down">
-          <li><a href="#map">Map</a></li>
-          <li><a href="#articles">Articles</a></li>
+          <li><a href="#map">map</a></li>
+          <li><a href="#articles">articles</a></li>
         </ul>
         <a href="#" class="brand-logo right"><i class="fa fa-cutlery" aria-hidden="true"></i></a>
       </div>
     </nav>
 </div>
+
 <!-- MAPBOX :) -->
 <div id="map">
   <script src="main.js"></script>
 </div>
 
-<!--Articles - Nathan, Sharon-->
-<div id="articles">
-  <!-- Article tabs -->
-  <!--
-  <div>
-    <ul class="nav nav-tabs" role="tablist">
-      <li role="presentation" class="active"><a href="#firstItem" data-toggle="tab">Ramayani</a></li>
-      <li role="presentation"><a href="#secondItem" data-toggle="tab">Taste of Tehran</a></li>
-      <li role="presentation"><a href="#thirdItem" data-toggle="tab">Hamasaku</a></li>
-      <li role="presentation"><a href="#fourthItem" data-toggle="tab">OP Cafe</a></li>
-    </ul>
-  </div>
-  -->
-  <!-- Tab panes -->
-  <!--
-  <div id = "myTabs" class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="firstItem">
-      <h3 id = "RestaurantName">Ramayani</h3>
-      <h4 id = "RestaurantDescription">Authentic, affordable Indonesian cuisine</h4>
-    </div>
-    <div role="tabpanel" class="tab-pane" id="secondItem">
-      <h3 id = "RestaurantName">Taste of Tehran</h3>
-    </div>
-    <div role="tabpanel" class="tab-pane" id="thirdItem">
-      <h3 id = "RestaurantName">Hamasaku</h3>
-    </div>
-    <div role="tabpanel" class="tab-pane" id="fourthItem">
-      <h3 id = "RestaurantName">OP Cafe</h3>
-    </div>
-  </div>
--->
-  <div class="container">
-     <div class="row">
-       <div class="col s12 m4">
-         <div class="card deep-orange lighten-1">
-           <div class="card-content white-text">
-             <span class="card-title">Ramayani</span>
-             <p>I am a very simple card. I am good at containing small bits of information.
-             I am convenient because I require little markup to use effectively.</p>
-           </div>
-           <div class="card-action">
-             <a href="https://www.google.com/url?q=https://dailybruin.com/2016/11/15/ramayani-offers-authentic-affordable-indonesian-cuisine-to-westwood/&sa=U&ved=0ahUKEwj89szDi9DRAhVhrlQKHeTADIkQFggOMAM&client=internal-uds-cse&usg=AFQjCNHqnf6GzM-roE735lilFDjySbaUdQ">
-               Article
-             </a>
-           </div>
-         </div>
+   <div class="row">
+       <div class="col s12 m3">
+            <div id = "title"> Ramayani </div>
+            <figure class="restaurant"> <img src="https://s3-media2.fl.yelpcdn.com/bphoto/PPFvnYMNoKfEW6VdTm-QPQ/o.jpg"/>
+                    <figcaption> "This quaint and cozy restaurant on the edge of Westwood houses a dining experience that diverges from more mainstream Southeast Asian cuisine. Ramayani boasts an impressive menu with a diverse range of authentic and well-prepared Indonesian food, including coconut rice and spicy chicken curry."
+                    </figcaption>
+            <a href="https://dailybruin.com/2016/11/15/ramayani-offers-authentic-affordable-indonesian-cuisine-to-westwood/" class="bttn-dark" id="cardButton"/></a>
+            </figure>
        </div>
-       <div class="col s12 m4">
-         <div class="card deep-orange lighten-1">
-           <div class="card-content white-text">
-             <span class="card-title">Taste of Tehran</span>
-             <p>I am a very simple card. I am good at containing small bits of information.
-             I am convenient because I require little markup to use effectively.</p>
-           </div>
-           <div class="card-action">
-             <a href="#">This is a link</a>
-           </div>
-         </div>
+       <div class="col s12 m3">
+            <div id = "title"> Taste of Tehran </div>
+            <figure class="restaurant"> <img src="https://s3-media4.fl.yelpcdn.com/bphoto/uBswRuPEDVuQmnJVEVnXpg/o.jpg"/>
+                    <figcaption> "The sampler trio allows indecisive diners to explore multiple options off the menu. Customers can choose from a wide range of “small plates,” including ash reshteh, a Persian herb and bean stew, and lubia, a dish of pinto beans stewed in a rich tomato sauce. The trio is also a strong option for vegetarians, as none of the small plate options contain meat."
+                    </figcaption>
+            <a href="https://dailybruin.com/2016/12/06/boulevard-bites-taste-of-tehran-provides-wide-range-of-persian-dishes/"></a>
+            </figure>
        </div>
-       <div class="col s12 m4">
-         <div class="card deep-orange lighten-1">
-           <div class="card-content white-text">
-             <span class="card-title">Hamasaku</span>
-             <p>I am a very simple card. I am good at containing small bits of information.
-             I am convenient because I require little markup to use effectively.</p>
-           </div>
-           <div class="card-action">
-             <a href="#">This is a link</a>
-           </div>
-         </div>
+       <div class="col s12 m3">
+            <div id = "title"> Hamasaku </div>
+            <figure class="restaurant"> <img src="https://static1.squarespace.com/static/5703ee26f850823a0af2b0ea/571935d8cf80a18454c76c35/571e5d01ab48de1a6d59bd5c/1461607701181/Photo+Apr+07%2C+11+56+09+AM.jpg?format=2500w"/>
+                    <figcaption> "Where Hamasaku stands out is in its presentation of the dishes. Each piece of the appetizer is put together with vibrant toppings of avocado against dark, almost metallic plating. The modernization of the food presentation creates a more elegant dining experience than that of the conveyor belt sushi joints of Sawtelle."
+                    </figcaption>
+            <a href="https://dailybruin.com/2017/01/17/boulevard-bites-hamasaku-boasts-quality-sushi-vibrant-presentation/" class="bttn-dark"></a>
+            </figure>
        </div>
-       <div class="col s12 m4">
-         <div class="card deep-orange lighten-1">
-           <div class="card-content white-text">
-             <span class="card-title">OP Cafe</span>
-             <p>I am a very simple card. I am good at containing small bits of information.
-             I am convenient because I require little markup to use effectively.</p>
-           </div>
-           <div class="card-action">
-             <a href="#">This is a link</a>
-           </div>
-         </div>
+       <div class="col s12 m3">
+            <div id = "title"> OP Cafe </div>
+            <figure class="restaurant"> <img src="https://s3-media2.fl.yelpcdn.com/bphoto/JVxkNyyQmTOkNq4akgiX-g/o.jpg"/>
+                    <figcaption> "The OP Cafe focuses on breakfast and brunch items, with 19 dishes that feature eggs and six options that come from the griddle. The menu has healthy choices as well as comfort food breakfast options for customers who want something a little more rich."
+                    </figcaption>
+            <a href="https://dailybruin.com/2016/11/22/boulevard-bites-the-op-cafes-beachy-bites-make-for-a-solid-brunch/"></a>
+            </figure>
        </div>
-     </div>
    </div>
 </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

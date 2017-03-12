@@ -1,117 +1,63 @@
-mapboxgl.accessToken = 'pk.eyJ1Ijoia2FzcGkiLCJhIjoiY2l6MWt6czNuMDVnMTJxbjEycnB1Nmt3MiJ9.25IwYCMCXhrhtgKBsFfdNA';
-
-var map = new mapboxgl.Map({
-  container: 'map',
-  // style URL
-  style: 'mapbox://styles/mapbox/light-v9',
-  // initial position in [long, lat] format
-  center: [-118.43791, 34.05048],				
-  // initial zoom
-  zoom: 11
-});
-
-var stores =       {
-        "type": "FeatureCollection",
-        "features": [
-          {
-            "type": "Feature",
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -118.437929,
-                34.050762
-              ]
-            },
-            "properties": {
-              "phoneFormatted": "(202) 234-7336",
-              "phone": "2022347336",
-              "address": "1471 P St NW",
-              "city": "Washington DC",
-              "country": "United States",
-              "crossStreet": "at 15th St NW",
-              "postalCode": "20005",
-              "state": "D.C."
-            }
-          },
-          {
-            "type": "Feature",
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -118.443339,
-                34.048308
-              ]
-            },
-            "properties": {
-              "phoneFormatted": "(202) 507-8357",
-              "phone": "2025078357",
-              "address": "2221 I St NW",
-              "city": "Washington DC",
-              "country": "United States",
-              "crossStreet": "at 22nd St NW",
-              "postalCode": "20037",
-              "state": "D.C."
-            }
-          },
-          {
-            "type": "Feature",
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -118.452479,
-                34.021056
-              ]
-            },
-            "properties": {
-              "phoneFormatted": "(202) 387-9338",
-              "phone": "2023879338",
-              "address": "1512 Connecticut Ave NW",
-              "city": "Washington DC",
-              "country": "United States",
-              "crossStreet": "at Dupont Circle",
-              "postalCode": "20036",
-              "state": "D.C."
-            }
-          },
-          {
-            "type": "Feature",
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                -118.435216,
-                34.047775
-              ]
-            },
-            "properties": {
-              "phoneFormatted": "(202) 337-9338",
-              "phone": "2023379338",
-              "address": "3333 M St NW",
-              "city": "Washington DC",
-              "country": "United States",
-              "crossStreet": "at 34th St NW",
-              "postalCode": "20007",
-              "state": "D.C."
-            }
-          },
-          
-        ]
-};
-
-
-map.on('load', function(e) {
-  // Add the data to your map as a layer
-  map.addLayer({
-    id: 'locations',
-    type: 'symbol',
-    // Add a GeoJSON source containing place coordinates and information.
-    source: {
-      type: 'geojson',
-      data: stores
+L.mapbox.accessToken = 'pk.eyJ1IjoiYmVuc29uaGFuIiwiYSI6ImNpdW4wc2V3NzAwZzAydG13eTB6bDdrdGMifQ.3qVecRB6mpgc1X-pURkDng';
+var map = L.mapbox.map('map-leaflet', 'mapbox.light')
+  .setView([34.05048, -118.43791], 13);
+var geojson = [
+  {
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [-118.437918, 34.050486]
     },
-    layout: {
-      'icon-image': 'restaurant-15',
-      'icon-allow-overlap': true,
+    properties: {
+      title: '<h1 style="font-family: Pacifico, cursive; font-size: large;">Ramayani</h1>',
+      description: '<h1 style="font-family: Lato; font-size: small">1777 Westwood Blvd Los Angeles, CA 90024</h1>',
+      'marker-color': '#ff5722',
+      'marker-size': 'large',
+      'marker-symbol': 'restaurant'
     }
-  });
-});
-
+  },
+  {
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [-118.435277, 34.0477207]
+    },
+    properties: {
+      title: '<h1 style="font-family: Pacifico, cursive; font-size: large;">Taste of Tehran</h1>',
+      description: '<h1 style="font-family: Lato; font-size: small">1915 Westwood Blvd, Los Angeles, CA 90025</h1>',
+      'marker-color': '#ff5722',
+      'marker-size': 'large',
+      'marker-symbol': 'restaurant'
+    }
+  },
+  {
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [-118.443019, 34.048465]
+    },
+    properties: {
+      title: '<h1 style="font-family: Pacifico, cursive; font-size: large;">Hamasaku</h1>',
+      description: '<h1 style="font-family: Lato; font-size: small">11043 California Route 2, Los Angeles, CA 90025</h1>',
+      'marker-color': '#ff5722',
+      'marker-size': 'large',
+      'marker-symbol': 'restaurant'
+    }
+  },
+  {
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [-118.452521, 34.020999]
+    },
+    properties: {
+      title: '<h1 style="font-family: Pacifico, cursive; font-size: large;">OP Cafe</h1>',
+      description: '<h1 style="font-family: Lato; font-size: small">3117 Ocean Park Blvd, Santa Monica, CA 90405</h1>',
+      'marker-color': '#ff5722',
+      'marker-size': 'large',
+      'marker-symbol': 'restaurant'
+    }
+  }
+];
+var myLayer = L.mapbox.featureLayer().setGeoJSON(geojson).addTo(map);
+map.scrollWheelZoom.disable();

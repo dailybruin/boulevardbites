@@ -1,5 +1,5 @@
 L.mapbox.accessToken = 'pk.eyJ1IjoiYmVuc29uaGFuIiwiYSI6ImNpdW4wc2V3NzAwZzAydG13eTB6bDdrdGMifQ.3qVecRB6mpgc1X-pURkDng';
-var map = L.mapbox.map('map-leaflet', 'mapbox.light')
+var map = L.mapbox.map('map-leaflet', 'mapbox.outdoors')
   .setView([34.05048, -118.43791], 12);
 var geojson = [
   {

@@ -2,10 +2,14 @@
   padding-top: 1%;
 }
 
+figure {
+  width: 100%;
+  height: 100%;
+}
+
 .restaurant {
   position: relative;
   display: inline-block;
-  max-width: 190px;
   margin: 20px;
   width: 100%;
   color: #bbb;
@@ -26,7 +30,7 @@
 
 
  .restaurant img {
-  max-width: 140%;
+  width: 100%;
   height: 200px;
   overflow: hidden;
   backface-visibility: hidden;
@@ -39,7 +43,7 @@
   padding-top: 15px;
   padding-left: 10px;
   padding-right: 10px;
-  width: 140%;
+  width: 100%;
   height: 100%;
   top: 0px;
   bottom: 0px;
@@ -87,7 +91,7 @@
 
 #nav-mobile
 {
-  font-family: "futura";
+  font-family: "Lato";
   font-variant: small-caps;
 }
 
@@ -98,7 +102,7 @@
 {
   color: white;
   text-decoration: none;
-  font-family: "futura";
+  font-family: "Lato";
   font-variant: small-caps;
 
 }
@@ -107,7 +111,7 @@
 {
   width: 100%;
   height: 75vh;
-  font-family: "futura";
+  font-family: "Lato";
   font-variant: caps;
 
 }
@@ -126,7 +130,7 @@
 
 .card p
 {
-  font-family: "futura";
+  font-family: "Lato";
   font-variant: small-caps;
   height: 100px;
 }

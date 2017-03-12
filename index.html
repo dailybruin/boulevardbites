@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:title" content="Boulevard Bites | Daily Bruin"/>
+  <meta property="og:description" content="Finding a delicious restaurant in Los Angeles can be difficult among the city’s thousands of dining options. To help readers narrow down their search, the Daily Bruin will review restaurants located along main street boulevards near UCLA each week."/>
+  <meta property="og:image" content="http://dailybruin.com/images/2016/12/Boulevard_Bites_FINAL-640x121.png"/>
+  <meta property="og:image:type" content="image/png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+
   <!-- <script src='https://api.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.js'></script>
   <link href='https://api.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' /> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -12,118 +20,283 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <title>Boulevard Bites</title>
 </head>
-<body>
 
+<body>
 <!--Navbar - Benson-->
 <div>
-    <nav>
-      <div class="nav-wrapper deep-orange nav-wrapper-fixed-top z-depth-4" id= "navbar">
-        <a href="#" class="brand-logo center">Boulevard Bites</a>
-      </div>
-    </nav>
+  <nav>
+    <div class="nav-wrapper deep-orange darken-2 nav-wrapper-fixed-top z-depth-4" id= "navbar">
+      <a href="#" class="brand-logo center">Boulevard Bites</a>
+    </div>
+  </nav>
 </div>
 
 <!-- MAPBOX :) -->
 <div id="map-leaflet">
   <script src="main.js"></script>
 </div>
+
 <div class="articles">
   <div class="row">
-      <div class="col s3">
-        <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="https://s3-media2.fl.yelpcdn.com/bphoto/PPFvnYMNoKfEW6VdTm-QPQ/o.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Ramayani<i class="fa fa-bars right" aria-hidden="true"></i></span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Ramayani<i class="fa fa-window-close right" aria-hidden="true"></i></span>
-            <p>This quaint and cozy restaurant on the edge of Westwood houses a dining
-              experience that diverges from more mainstream Southeast Asian cuisine.
-              Ramayani boasts an impressive menu with a diverse range of authentic
-              and well-prepared Indonesian food, including coconut rice and spicy
-              chicken curry.</p>
-          </div>
+    <div class="col s12 m6 l3">
+      <div class="card sticky-action hoverable">
+        <div class="card-image waves-effect waves-block waves-light" id="ramayani">
         </div>
-           <!-- <div id = "title"> Ramayani </div>
-           <figure class="restaurant"> <img src="https://s3-media2.fl.yelpcdn.com/bphoto/PPFvnYMNoKfEW6VdTm-QPQ/o.jpg"/>
-                   <figcaption> "This quaint and cozy restaurant on the edge of Westwood houses a dining experience that diverges from more mainstream Southeast Asian cuisine. Ramayani boasts an impressive menu with a diverse range of authentic and well-prepared Indonesian food, including coconut rice and spicy chicken curry."
-                   </figcaption>
-           <a href="https://dailybruin.com/2016/11/15/ramayani-offers-authentic-affordable-indonesian-cuisine-to-westwood/" class="bttn-dark" id="cardButton"/></a>
-           </figure> -->
-      </div>
-      <div class="col s3">
-        <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="https://s3-media4.fl.yelpcdn.com/bphoto/uBswRuPEDVuQmnJVEVnXpg/o.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Taste of Tehran<i class="fa fa-bars right" aria-hidden="true"></i></span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Taste of Tehran<i class="fa fa-window-close right" aria-hidden="true"></i></span>
-            <p>The sampler trio allows indecisive diners to explore multiple options
-              off the menu. Customers can choose from a wide range of “small plates,”
-              including ash reshteh, a Persian herb and bean stew, and lubia, a dish
-              of pinto beans stewed in a rich tomato sauce. The trio is also a strong
-              option for vegetarians, as none of the small plate options contain meat.</p>
-          </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Ramayani<i class="fa fa-bars right" aria-hidden="true"></i></span>
         </div>
-           <!-- <div id = "title"> Taste of Tehran </div>
-           <figure class="restaurant"> <img src="https://s3-media4.fl.yelpcdn.com/bphoto/uBswRuPEDVuQmnJVEVnXpg/o.jpg"/>
-                   <figcaption> "The sampler trio allows indecisive diners to explore multiple options off the menu. Customers can choose from a wide range of “small plates,” including ash reshteh, a Persian herb and bean stew, and lubia, a dish of pinto beans stewed in a rich tomato sauce. The trio is also a strong option for vegetarians, as none of the small plate options contain meat."
-                   </figcaption>
-           <a href="https://dailybruin.com/2016/12/06/boulevard-bites-taste-of-tehran-provides-wide-range-of-persian-dishes/"></a>
-           </figure> -->
-      </div>
-      <div class="col s3">
-        <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="https://static1.squarespace.com/static/5703ee26f850823a0af2b0ea/571935d8cf80a18454c76c35/571e5d01ab48de1a6d59bd5c/1461607701181/Photo+Apr+07%2C+11+56+09+AM.jpg?format=2500w">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Hamasaku<i class="fa fa-bars right" aria-hidden="true"></i></span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Hamasaku<i class="fa fa-window-close right" aria-hidden="true"></i></span>
-            <p>Where Hamasaku stands out is in its presentation of the dishes. Each
-              piece of the appetizer is put together with vibrant toppings of avocado
-              against dark, almost metallic plating. The modernization of the food
-              presentation creates a more elegant dining experience than that of
-              the conveyor belt sushi joints of Sawtelle.</p>
-          </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Ramayani<i class="fa fa-window-close right" aria-hidden="true"></i></span>
+          <p>This quaint and cozy restaurant on the edge of Westwood houses a dining
+            experience that diverges from more mainstream Southeast Asian cuisine.
+            Ramayani boasts an impressive menu with a diverse range of authentic
+            and well-prepared Indonesian food, including coconut rice and spicy
+            chicken curry.</p>
         </div>
-           <!-- <div id = "title"> Hamasaku </div>
-           <figure class="restaurant"> <img src="https://static1.squarespace.com/static/5703ee26f850823a0af2b0ea/571935d8cf80a18454c76c35/571e5d01ab48de1a6d59bd5c/1461607701181/Photo+Apr+07%2C+11+56+09+AM.jpg?format=2500w"/>
-                   <figcaption> "Where Hamasaku stands out is in its presentation of the dishes. Each piece of the appetizer is put together with vibrant toppings of avocado against dark, almost metallic plating. The modernization of the food presentation creates a more elegant dining experience than that of the conveyor belt sushi joints of Sawtelle."
-                   </figcaption>
-           <a href="https://dailybruin.com/2017/01/17/boulevard-bites-hamasaku-boasts-quality-sushi-vibrant-presentation/" class="bttn-dark"></a>
-           </figure> -->
-      </div>
-      <div class="col s3">
-        <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="https://s3-media2.fl.yelpcdn.com/bphoto/JVxkNyyQmTOkNq4akgiX-g/o.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">OP Cafe<i class="fa fa-bars right" aria-hidden="true"></i></span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">OP Cafe<i class="fa fa-window-close right" aria-hidden="true"></i></span>
-            <p>The OP Cafe focuses on breakfast and brunch items, with 19 dishes
-              that feature eggs and six options that come from the griddle. The menu
-              has healthy choices as well as comfort food breakfast options for customers
-              who want something a little more rich.</p>
-          </div>
+        <div class="card-action">
+          <a href="https://dailybruin.com/2016/11/15/ramayani-offers-authentic-affordable-indonesian-cuisine-to-westwood/" target="_blank">READ MORE</a>
         </div>
-           <!-- <div id = "title"> OP Cafe </div>
-           <figure class="restaurant"> <img src="https://s3-media2.fl.yelpcdn.com/bphoto/JVxkNyyQmTOkNq4akgiX-g/o.jpg"/>
-                   <figcaption> "The OP Cafe focuses on breakfast and brunch items, with 19 dishes that feature eggs and six options that come from the griddle. The menu has healthy choices as well as comfort food breakfast options for customers who want something a little more rich."
-                   </figcaption>
-           <a href="https://dailybruin.com/2016/11/22/boulevard-bites-the-op-cafes-beachy-bites-make-for-a-solid-brunch/"></a>
-           </figure> -->
       </div>
+    </div>
+    <div class="col s12 m6 l3">
+      <div class="card sticky-action hoverable">
+        <div class="card-image waves-effect waves-block waves-light" id="tehran">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Taste of Tehran<i class="fa fa-bars right" aria-hidden="true"></i></span>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Taste of Tehran<i class="fa fa-window-close right" aria-hidden="true"></i></span>
+          <p>The sampler trio allows indecisive diners to explore multiple options
+            off the menu. Customers can choose from a wide range of “small plates,”
+            including ash reshteh, a Persian herb and bean stew, and lubia, a dish
+            of pinto beans stewed in a rich tomato sauce. The trio is also a strong
+            option for vegetarians, as none of the small plate options contain meat.</p>
+        </div>
+        <div class="card-action">
+          <a href="https://dailybruin.com/2016/12/06/boulevard-bites-taste-of-tehran-provides-wide-range-of-persian-dishes/" target="_blank">READ MORE</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l3">
+      <div class="card sticky-action hoverable">
+        <div class="card-image waves-effect waves-block waves-light" id="hama">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Hamasaku<i class="fa fa-bars right" aria-hidden="true"></i></span>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Hamasaku<i class="fa fa-window-close right" aria-hidden="true"></i></span>
+          <p>Where Hamasaku stands out is in its presentation of the dishes. Each
+            piece of the appetizer is put together with vibrant toppings of avocado
+            against dark, almost metallic plating. The modernization of the food
+            presentation creates a more elegant dining experience than that of
+            the conveyor belt sushi joints of Sawtelle.</p>
+        </div>
+        <div class="card-action">
+          <a href="https://dailybruin.com/2017/01/17/boulevard-bites-hamasaku-boasts-quality-sushi-vibrant-presentation/" target="_blank">READ MORE</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l3">
+      <div class="card sticky-action hoverable">
+        <div class="card-image waves-effect waves-block waves-light" id="op">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">OP Cafe<i class="fa fa-bars right" aria-hidden="true"></i></span>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">OP Cafe<i class="fa fa-window-close right" aria-hidden="true"></i></span>
+          <p>The OP Cafe focuses on breakfast and brunch items, with 19 dishes
+            that feature eggs and six options that come from the griddle. The menu
+            has healthy choices as well as comfort food breakfast options for customers
+            who want something a little more rich.
+          </p>
+        </div>
+        <div class="card-action">
+          <a href="https://dailybruin.com/2016/11/22/boulevard-bites-the-op-cafes-beachy-bites-make-for-a-solid-brunch/" target="_blank">READ MORE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12 m6 l3">
+      <div class="card sticky-action hoverable">
+        <div class="card-image waves-effect waves-block waves-light" id="taco">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Tacos Tu Madre’s<i class="fa fa-bars right" aria-hidden="true"></i></span>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">OP Cafe<i class="fa fa-window-close right" aria-hidden="true"></i></span>
+          <p>Tacos Tu Madre centers its menu around its tacos which range in flavors
+            from classic asada to Korean BBQ. For about four extra bucks, each taco
+            option is also available in the form of a burrito, which includes brown
+            rice, beans and jack cheese, or a bowl, in which brown rice, kale or
+            a mix of both act as a substitute for corn tortillas.
+          </p>
+        </div>
+        <div class="card-action">
+          <a href="http://dailybruin.com/2017/01/23/boulevard-bites-tacos-tu-madres-bland-tacos-fall-short-despite-shops-colorful-aesthetic/" target="_blank">READ MORE</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l3">
+      <div class="card sticky-action hoverable">
+        <div class="card-image waves-effect waves-block waves-light" id="cake">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Cake and Art<i class="fa fa-bars right" aria-hidden="true"></i></span>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Cake and Art<i class="fa fa-window-close right" aria-hidden="true"></i></span>
+          <p>Cake and Art sells elaborate and expensive custom cake shapes that feature
+            celebrities such as Angelina Jolie and characters like the Mad Hatter.
+            It also sells a small selection of cupcakes for less expensive prices,
+            but offers no seating at the shop.
+          </p>
+        </div>
+        <div class="card-action">
+          <a href="http://dailybruin.com/2017/01/30/boulevard-bites-inconsistent-quality-eclipses-original-flavors-of-cake-and-art/" target="_blank">READ MORE</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l3">
+      <div class="card sticky-action hoverable">
+        <div class="card-image waves-effect waves-block waves-light" id="butcher">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Butcher’s Daughter<i class="fa fa-bars right" aria-hidden="true"></i></span>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Butcher’s Daughter<i class="fa fa-window-close right" aria-hidden="true"></i></span>
+          <p>Nestled on trendy Abbot Kinney Boulevard between rows of palm trees
+            and picturesque murals of Venice, the Butcher’s Daughter‘s wholesome
+            cuisine and laid-back beach vibe make it the ideal spot to catch up with
+            friends over brunch, coffee or a light dinner.</p>
+        </div>
+        <div class="card-action">
+          <a href="http://dailybruin.com/2017/02/20/boulevard-bites-the-butchers-daughters-healthy-versatile-menu-is-a-vegetarian-delight/" target="_blank">READ MORE</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l3">
+      <div class="card sticky-action hoverable">
+        <div class="card-image waves-effect waves-block waves-light" id="poke">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">8oz Poke<i class="fa fa-bars right" aria-hidden="true"></i></span>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">8oz Poke<i class="fa fa-window-close right" aria-hidden="true"></i></span>
+          <p>Knock-your-socks-off poke bowls can be found at West Hollywood’s 8oz Poke.
+            The poke shop, which also serves ramen, can be reached in 30 minutes
+            during rush hour from UCLA.</p>
+        </div>
+        <div class="card-action">
+          <a href="http://dailybruin.com/2017/02/07/boulevard-bites-8oz-poke-floats-above-the-rest-with-dynamic-flavors-high-quality-fish/" target="_blank">READ MORE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12 m6 l3">
+      <div class="card sticky-action hoverable">
+        <div class="card-image waves-effect waves-block waves-light" id="ramen">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Sawtelle Ramen<i class="fa fa-bars right" aria-hidden="true"></i></span>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Sawtelle Ramen<i class="fa fa-window-close right" aria-hidden="true"></i></span>
+          <p>Sawtelle Boulevard has become a mecca for ramen in Los Angeles. Daily
+            Bruin Arts & Entertainment pits three restaurants at the top of the ramen
+            hierarchy – Tsujita Annex, Tatsu Ramen and Daikokuya – against one another
+            in an ultimate battle of the bowls.</p>
+        </div>
+        <div class="card-action">
+          <a href="http://dailybruin.com/2017/02/28/boulevard-bites-three-ramen-shops-battle-to-be-the-best-bowl-on-sawtelle-boulevard/" target="_blank">READ MORE</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l3">
+      <div class="card sticky-action hoverable">
+        <div class="card-image waves-effect waves-block waves-light" id="coffee">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Fountain Coffee Room<i class="fa fa-bars right" aria-hidden="true"></i></span>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Fountain Coffee Room<i class="fa fa-window-close right" aria-hidden="true"></i></span>
+          <p>Tucked away on the lower level of the iconic peachy-pink Beverly Hills
+            Hotel on Sunset Boulevard, the Fountain Coffee Room has served as a retro
+            breakfast spot for Hollywood stars since 1949. Its all-day, American-style
+            breakfast, vintage theme and Beverly Hills location contribute to a quintessential
+            Los Angeles experience. However, despite the hotel’s glamorous reputation,
+            the restaurant and the food it serves are not worth its sky-high prices.</p>
+        </div>
+        <div class="card-action">
+          <a href="http://dailybruin.com/2017/03/06/boulevard-bites-fountain-coffee-rooms-vintage-vibes-not-enough-to-overcome-high-prices/" target="_blank">READ MORE</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l3">
+      <div class="card sticky-action hoverable">
+        <div class="card-image waves-effect waves-block waves-light" id="tuck">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Tuck Room Tavern<i class="fa fa-bars right" aria-hidden="true"></i></span>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Tuck Room Tavern<i class="fa fa-window-close right" aria-hidden="true"></i></span>
+          <p>The Tuck Room Tavern specializes in comfort food accompanied by cocktails
+            served from boozy punch bowls. The menu consists of meat-heavy entrees
+            and a diverse selection of appetizers, such as the Ahi Tuna Poke or the
+            Reuben Croquettes.</p>
+        </div>
+        <div class="card-action">
+          <a href="http://dailybruin.com/2017/02/13/boulevard-bites-the-tuck-room-tavern-offers-tasty-options-for-valentines-day-dates/" target="_blank">READ MORE</a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+
+<div class="container">
+  <hr />
+  <p class="center">
+    Website made by
+    <a href="https://github.com/Bensun">Benson Han</a>,
+    <a href="https://github.com/kaspii">Katie Aspinwall</a>,
+    <a href="https://github.com/siowleo">Leo Siow</a>,
+    <a href="https://github.com/nwtsai">Nathan Tsai</a>, and
+    <a href="https://github.com/sharonzhen">Sharon Zhen</a>
+  </p>
+</div>
+
 </body>
+
+<!-- <div id = "title"> Ramayani </div>
+<figure class="restaurant"> <img src="https://s3-media2.fl.yelpcdn.com/bphoto/PPFvnYMNoKfEW6VdTm-QPQ/o.jpg"/>
+        <figcaption> "This quaint and cozy restaurant on the edge of Westwood houses a dining experience that diverges from more mainstream Southeast Asian cuisine. Ramayani boasts an impressive menu with a diverse range of authentic and well-prepared Indonesian food, including coconut rice and spicy chicken curry."
+        </figcaption>
+<a href="https://dailybruin.com/2016/11/15/ramayani-offers-authentic-affordable-indonesian-cuisine-to-westwood/" class="bttn-dark" id="cardButton"/></a>
+</figure> -->
+<!-- <div id = "title"> Taste of Tehran </div>
+<figure class="restaurant"> <img src="https://s3-media4.fl.yelpcdn.com/bphoto/uBswRuPEDVuQmnJVEVnXpg/o.jpg"/>
+       <figcaption> "The sampler trio allows indecisive diners to explore multiple options off the menu. Customers can choose from a wide range of “small plates,” including ash reshteh, a Persian herb and bean stew, and lubia, a dish of pinto beans stewed in a rich tomato sauce. The trio is also a strong option for vegetarians, as none of the small plate options contain meat."
+       </figcaption>
+<a href="https://dailybruin.com/2016/12/06/boulevard-bites-taste-of-tehran-provides-wide-range-of-persian-dishes/"></a>
+</figure> -->
+<!-- <div id = "title"> Hamasaku </div>
+<figure class="restaurant"> <img src="https://static1.squarespace.com/static/5703ee26f850823a0af2b0ea/571935d8cf80a18454c76c35/571e5d01ab48de1a6d59bd5c/1461607701181/Photo+Apr+07%2C+11+56+09+AM.jpg?format=2500w"/>
+       <figcaption> "Where Hamasaku stands out is in its presentation of the dishes. Each piece of the appetizer is put together with vibrant toppings of avocado against dark, almost metallic plating. The modernization of the food presentation creates a more elegant dining experience than that of the conveyor belt sushi joints of Sawtelle."
+       </figcaption>
+<a href="https://dailybruin.com/2017/01/17/boulevard-bites-hamasaku-boasts-quality-sushi-vibrant-presentation/" class="bttn-dark"></a>
+</figure> -->
+<!-- <div id = "title"> OP Cafe </div>
+<figure class="restaurant"> <img src="https://s3-media2.fl.yelpcdn.com/bphoto/JVxkNyyQmTOkNq4akgiX-g/o.jpg"/>
+       <figcaption> "The OP Cafe focuses on breakfast and brunch items, with 19 dishes that feature eggs and six options that come from the griddle. The menu has healthy choices as well as comfort food breakfast options for customers who want something a little more rich."
+       </figcaption>
+<a href="https://dailybruin.com/2016/11/22/boulevard-bites-the-op-cafes-beachy-bites-make-for-a-solid-brunch/"></a>
+</figure> -->
